@@ -1,4 +1,4 @@
-# output "instance_output" {
-#     value = aws_instance.roboshop-ec2
+output "instance_output" {
+    value = aws_instance.roboshop_ec2
   
-# }
+}

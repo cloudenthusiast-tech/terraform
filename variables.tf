@@ -46,7 +46,7 @@ variable "environment"{
 }
 
 variable "instances"{  
-    default= [ "mongodb", "redis", "mysql", "rabbitmq" ]
+    default= [ "mongodb", "frontend" ]
 }
 
 variable "zone_id"{

@@ -1,9 +1,9 @@
 provider "aws" {
 
 }
-resource "aws_instance" "roboshop-ec2" {
+resource "aws_instance" "roboshop_ec2" {
     ami= var.ami_id
-    count= 4
+    count= 2
     instance_type = var.environment == "dev" ? "t3.micro" : "t3.medium"
     vpc_security_group_ids = [aws_security_group.roboshop-sg-in.id, aws_security_group.roboshop-sg-out.id]
     tags = {
